@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Run</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="src/css/main.css">
 </head>
 <body>
@@ -34,13 +35,6 @@
             </div>
         </div>
     </header>
-
-
-
-
-
-
-
     <!--NABÍDKA-->
     <section class="offer">
         <div class="container">
@@ -54,8 +48,8 @@
                             Katalog 38 modelů koloběžek. Každá z nich bude doručena v den objednávky, díky naší logistické technologii a inovacím
                         </p>
                         <div class="offer-buttons">
-                            <a href="#">Zobrazit katalog</a>
-                            <a href="#">Zavolejte mi</a>
+                            <a href="#" class="btn-blue">Zobrazit katalog</a>
+                            <a href="#" class="btn-white">Zavolejte mi</a>
                         </div>
                     </div>
                 </div>
@@ -68,13 +62,272 @@
         </div>
     </section>
     <!--PROČ MY-->
-    <section class="why"></section>
+    <section class="why">
+        <div class="container">
+            <div class="why-wrap">
+                <div class="why-block">
+                    <h2 class="why-header">
+                        Proč my
+                    </h2>
+                    <div class="why-items">
+                        <div class="why-item">
+                            <img src="img/point.svg" alt="Místo">
+                            <p>Rychlost objednávky — <br><span> koloběžka u Vás v den objednání</span></p>
+                        </div>
+                        <div class="why-item">
+                            <img src="img/star.svg" alt="Hvězda">
+                            <p>Roky zkušeností —<br><span> na trhu již 12 let</span></p>
+                        </div>
+                        <div class="why-item">
+                            <img src="img/love.png" alt="Srdce">
+                            <p>Důvěra zákazníků —<br><span> 362 kladných recenzí</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--V PRODEJI-->
-    <section class="scooters"></section>
+    <section class="scooters">
+        <div class="container">
+            <div class="scooters-headwrap">
+                <h2 class="scooters-header">
+                    V prodeji
+                </h2>
+                <div class="scooters-arrows">
+                    <div class="scooters-arrows__prev">
+                        <img src="img/arrowBlackLeft.png" alt="">
+                    </div>
+                    <div class="scooters-arrows__next">
+                        <img src="img/arrowBlackRight.png" alt="">
+                    </div>
+                </div>
+            </div>
+                <div class="scooters-slider">
+                <!--Koloběžka MIDWAY Yamato 0810-1-->
+                    <div class="scooters-item">
+                        <div class="scooters-left">
+                            <h3 class="scooters-text">
+                                MIDWAY Yamato 0810
+                            </h3>
+                            <div class="scooters-desc">
+                                Baterie 6800 Ah, <br>
+                                max. rychlost 30 km/h, <br>
+                                max. zatížení 120 kg <br>
+                            </div>
+                            <div class="scooters-btn">
+                                <div class="scooters-btn__label">
+                                    <img src="img/Buy.svg" alt="Košík">
+                                    <span>Koupit za</span>
+                                </div>
+                                <strong>
+                                    18 490 Kč
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="scooters-right">
+                            <div class="scooters-image">
+                                <img src="img/imgMidway.png" alt="Koloběžka Midway">
+                            </div>
+                            <div class="scooters-label">
+                                New
+                            </div>
+                        </div>
+                    </div>
+                <!--Koloběžka AOVO S3 2021-2-->
+                    <div class="scooters-item">
+                        <div class="scooters-left">
+                            <div class="scooters-text">
+                                AOVO S3 2021
+                            </div>
+                            <div class="scooters-desc">
+                                Baterie 5380 Ah, <br>
+                                maximální rychlost 24 km/h, <br>
+                                maximální nosnost 132 kg <br>
+                            </div>
+                            <div class="scooters-btn">
+                                <div class="scooters-btn__label">
+                                    <img src="img/Buy.svg" alt="Košík">
+                                    <span>Koupit za</span>
+                                </div>
+                                <strong>
+                                    17 900 kč
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="scooters-right">
+                            <div class="scooters-image">
+                                <img src="img/imgAovo.png" alt="Koloběžka Aovo">
+                            </div>
+                            <div class="scooters-label">
+                                New
+                            </div>
+                        </div>
+                    </div>
+                <!--Koloběžka MIDWAY Yamato 0810-1-->
+                    <div class="scooters-item">
+                        <div class="scooters-left">
+                            <h3 class="scooters-text">
+                                MIDWAY Yamato 0810
+                            </h3>
+                            <div class="scooters-desc">
+                                Baterie 6800 Ah, <br>
+                                max. rychlost 30 km/h, <br>
+                                max. zatížení 120 kg <br>
+                            </div>
+                            <div class="scooters-btn">
+                                <div class="scooters-btn__label">
+                                    <img src="img/Buy.svg" alt="Košík">
+                                    <span>Koupit za</span>
+                                </div>
+                                <strong>
+                                    18 490 Kč
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="scooters-right">
+                            <div class="scooters-image">
+                                <img src="img/imgMidway.png" alt="Koloběžka Midway">
+                            </div>
+                            <div class="scooters-label">
+                                New
+                            </div>
+                        </div>
+                    </div>
+                <!--Koloběžka AOVO S3 2021-2-->
+                    <div class="scooters-item">
+                        <div class="scooters-left">
+                            <div class="scooters-text">
+                                AOVO S3 2021
+                            </div>
+                            <div class="scooters-desc">
+                                Baterie 5380 Ah, <br>
+                                maximální rychlost 24 km/h, <br>
+                                maximální nosnost 132 kg <br>
+                            </div>
+                            <div class="scooters-btn">
+                                <div class="scooters-btn__label">
+                                    <img src="img/Buy.svg" alt="Košík">
+                                    <span>Koupit za</span>
+                                </div>
+                                <strong>
+                                    17 900 kč
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="scooters-right">
+                            <div class="scooters-image">
+                                <img src="img/imgAovo.png" alt="Koloběžka Aovo">
+                            </div>
+                            <div class="scooters-label">
+                                New
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </section>
+
     <!--KLIENTI-->
-    <section class="reviews"></section>
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews-block">
+                <div class="reviews-info">
+                    <h2 class="reviews-header">
+                        Klienti říkají
+                    </h2>
+                    <div class="reviews-model">
+                        Model
+                    </div>
+                    <div class="reviews-desc">
+                        KugoSun 08
+                    </div>
+                </div>
+                <div class="reviews-right">
+                    <div class="reviews-slider">
+                        <div class="reviews-item">
+                            <div class="reviews-wrap">
+                                <div class="reviews-image">
+                                    <img src="img/woman.png" alt="Slečna">
+                                </div>
+                                <div class="reviews-text">
+                                    <p>Je fajn jezdit s celou rodinou večerní Prahou. <span>Jedno nabití vystačí na 3 hodiny.</span> Kéž by byla příležitost...</p>
+                                    <div class="reviews-arrows">
+                                        <div class="reviews-arrows__prev">
+                                            <img src="img/arrowBlackLeft.png" alt="">
+                                        </div>
+                                        <div class="reviews-arrows__next">
+                                            <img src="img/arrowBlackRight.png" alt="">
+                                        </div>
+                                    </div>
+                                    <span>Kateřina <br>Vosyková</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-item">
+                            <div class="reviews-wrap">
+                                <div class="reviews-image">
+                                    <img src="img/woman.png" alt="Slečna">
+                                </div>
+                                <div class="reviews-text">
+                                    <p>Je fajn jezdit s celou rodinou večerní Prahou. <span>Jedno nabití vystačí na 3 hodiny.</span> Kéž by byla příležitost...</p>
+                                    <div class="reviews-arrows">
+                                        <div class="reviews-arrows__prev">
+                                            <img src="img/arrowBlackLeft.png" alt="">
+                                        </div>
+                                        <div class="reviews-arrows__next">
+                                            <img src="img/arrowBlackRight.png" alt="">
+                                        </div>
+                                    </div>
+                                    <span>Kateřina <br>Vosyková</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-item">
+                            <div class="reviews-wrap">
+                                <div class="reviews-image">
+                                    <img src="img/woman.png" alt="Slečna">
+                                </div>
+                                <div class="reviews-text">
+                                    <p>Je fajn jezdit s celou rodinou večerní Prahou. <span>Jedno nabití vystačí na 3 hodiny.</span> Kéž by byla příležitost...</p>
+                                    <div class="reviews-arrows">
+                                        <div class="reviews-arrows__prev">
+                                            <img src="img/arrowBlackLeft.png" alt="">
+                                        </div>
+                                        <div class="reviews-arrows__next">
+                                            <img src="img/arrowBlackRight.png" alt="">
+                                        </div>
+                                    </div>
+                                    <span>Kateřina <br>Vosyková</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!--FOOTER-->
     <section class="footer"></section>
 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

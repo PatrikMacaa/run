@@ -1,7 +1,13 @@
 $main: #093cb5
 $white: #fff
-$black: 
+$black: #000
+$grey: rgba(251, 251, 251, 0.45)
+$dark: #000000
+$orange:#FF7474
 
+
+*
+    box-sizing: border-box
 
 body
     font-family: 'Inter', sans-serif  
@@ -26,9 +32,9 @@ body
         display: flex
         justify-content: flex-end
     &-menu
+        cursor: pointer
         &_button
-            cursor: pointer
-            background-color: #093cb5
+            background-color: $main
             padding: 15px 25px
             border-radius: 50px
             display: flex
@@ -38,11 +44,15 @@ body
                 color: $white
                 margin-left: 10px
     &-icons
+        position: relative
+        z-index: 99
         img
             margin-left: 20px
-            cursor: pointer            
+            cursor: pointer   
+
 
 .offer
+    padding-bottom: 240px
     &-wrap
         display: flex
         justify-content: space-between
@@ -59,10 +69,233 @@ body
     &-desc
         font-size: 22px
         line-height: 30px
-        
-    //&-buttons
-    //a
-
+        color: $black
+        margin-bottom: 100px
+    &-buttons
+        display: flex
+        a
+            padding: 30px 60px
+            background-color: $main
+            border-radius: 50px
+            text-decoration: none
+            border: 3px solid $main
+            width: 300px
+            text-align: center
+            margin-right: 30px
+            transition: .2s
+        a.btn-blue
+            background-color: $main
+            color: $white
+            &:hover
+                background-color: transparent
+                color: $main
+        a.btn-white
+            color: $main
+            border: 3px solid transparent
+            &::before
+                content: ""
+                background-image: url("../img/CallMe.svg")
+                width: 30px
+                height: 30px
+                display: block
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: 55px
+            &:hover
+                border: 3px solid $main
     &-image
         img
             width: 100%
+            margin-top: -150px
+
+.why 
+    &-header
+        font-size: 96px
+        line-height: 100px
+        color: $white
+        letter-spacing: -2px
+        margin-bottom: 150px
+    &-wrap
+        background-image: url("../img/why-bg2.png")
+        background-repeat: no-repeat
+        border-radius: 100px
+        padding: 80px 100px
+        background-size: cover
+        background-position: center center
+    &-items
+        display: flex
+        justify-content: space-between
+    &-item
+        width: 30%
+        img
+            margin-bottom: 25px
+        p
+            color: $white
+            font-weight: 700
+            font-size: 36px
+            line-height: 40px
+            span
+                color: $grey
+
+.scooters
+    padding: 250px 0
+    &-headwrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 130px
+    &-arrows
+        display: flex
+        > div
+            background: rgba(0, 0, 0, 0.03)
+            width: 33px
+            height: 33px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border-radius: 10px
+            margin-left: 20px
+            cursor: pointer
+    &-header
+        font-size: 96px
+        line-height: 100px
+        letter-spacing: -2px
+        font-weight: 700
+        margin-top: 0
+        margin-bottom: 0
+    &-slider
+    &-item
+        width: 40%
+        display: flex !important
+        justify-content: space-between
+        padding: 60px 60px 0
+        background: #fbfbfb
+        border: 1px solid rgba(0, 0, 0, 0.03)
+        box-shadow: 0px 25px 15px rgba(155, 161, 167, 0.1997)
+        border-radius: 40px
+    &-left
+        width: 45%
+    &-right
+        width: 55%
+        display: flex
+        justify-content: flex-end
+        position: relative
+    &-text
+        font-size: 36px
+        line-height: 40px
+        color: $black
+        font-weight: 700
+        margin-bottom: 30px
+        margin-top: 0
+    &-desc
+        font-size: 22px
+        line-height: 30px
+        color: $black
+        margin-bottom: 50px
+    &-btn
+        background-color: $main
+        color: $white
+        padding: 20px
+        display: inline-block
+        border-radius: 30px
+        width: 220px
+        cursor: pointer
+        &_label
+            display: flex
+            align-items: center
+            margin-bottom: 15px
+            img
+                margin-right: 10px
+            span
+                font-size: 18px
+                line-height: 26px
+        strong
+            font-weight: 700
+            font-size: 36px
+            line-height: 40px
+    &-label
+        position: absolute
+        top: 0px
+        right: 0px
+        color: $white
+        font-size: 22px
+        line-height: 30px
+        font-weight: 700
+        padding: 16px
+        background-color: $orange
+        box-shadow: 0px 2.767256498336792px 2.2138051986694336px 0px rgba(155, 161, 167, 0.02), 0px 6.650102138519287px 5.32008171081543px 0px rgba(155, 161, 167, 0.03), 0px 12.521552085876465px 10.017241477966309px 0px rgba(155, 161, 167, 0.04), 0px 22.3363094329834px 17.869047164916992px 0px rgba(155, 161, 167, 0.04), 0px 41.777610778808594px 33.422088623046875px 0px rgba(155, 161, 167, 0.05), 0px 100px 80px 0px rgba(155, 161, 167, 0.07)
+        border-radius: 20px
+    &-image
+        img
+        margin-top: -50px
+
+.slick-slide
+    margin: 0 15px 50px
+
+.slick-list
+    margin: 0 -15px
+
+.reviews
+    &-info
+        width: 40%
+    &-header
+        font-size: 96px
+        font-weight: 700
+        line-height: 100px
+        letter-spacing: -2px
+        color: $black
+    &-model
+        color: rgba(0, 0, 0, 0.65)
+        font-size: 22px
+        line-height: 30px
+    &-desc
+        font-size: 36px
+        font-weight: 700
+        line-height: 40px
+        color: $black
+    &-block
+        display: flex
+    &-right
+        width: 60%
+    &-slider
+
+    &-item
+
+    &-wrap
+        display: flex
+        //align-items: center
+        justify-content: space-between
+    &-image
+        img
+    &-text
+        margin-left: 85px
+        p
+            color: rgba(0, 0, 0, 0.45)           
+            font-size: 36px
+            font-weight: 700
+            line-height: 40px 
+            margin-top: 110px
+            margin-bottom: 70px
+            span
+                color: $black
+                font-size: 36px
+                font-weight: 700
+                line-height: 40px
+        span
+            color: #000
+            font-size: 22px
+            font-weight: 400
+    &-arrows
+            display: flex
+            margin-bottom: 250px
+            > div
+                background: rgba(0, 0, 0, 0.03)
+                width: 33px
+                height: 33px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                border-radius: 10px
+                margin-right: 20px
+                cursor: pointer
