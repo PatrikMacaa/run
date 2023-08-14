@@ -27,7 +27,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.header-left .header-right {
+.header-left, .header-right {
   width: 50%;
 }
 .header-left {
@@ -111,7 +111,6 @@ body {
 }
 .offer-buttons a {
   padding: 30px 60px;
-  background-color: #093cb5;
   border-radius: 50px;
   text-decoration: none;
   border: 3px solid #093cb5;
@@ -135,7 +134,7 @@ body {
 }
 .offer-buttons a.btn-white::before {
   content: "";
-  background-image: url("../img/CallMe.svg");
+  background-image: url("..img/CallMe.png");
   width: 30px;
   height: 30px;
   display: block;
@@ -159,9 +158,9 @@ body {
   color: #fff;
   letter-spacing: -2px;
   margin-bottom: 150px;
+  background-image: url("../src/img/group3.jpg");
 }
 .why-wrap {
-  background-image: url("../img/why-bg2.png");
   background-repeat: no-repeat;
   border-radius: 100px;
   padding: 80px 100px;
@@ -343,6 +342,7 @@ body {
   line-height: 100px;
   letter-spacing: -2px;
   color: #000;
+  margin-top: 90px;
 }
 .reviews-model {
   color: rgba(0, 0, 0, 0.65);

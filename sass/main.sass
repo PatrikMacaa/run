@@ -23,7 +23,7 @@ body
         display: flex
         justify-content: space-between
         align-items: center
-    &-left &-right
+    &-left, &-right
         width: 50%
     &-left
         display: flex
@@ -75,7 +75,6 @@ body
         display: flex
         a
             padding: 30px 60px
-            background-color: $main
             border-radius: 50px
             text-decoration: none
             border: 3px solid $main
@@ -94,7 +93,7 @@ body
             border: 3px solid transparent
             &::before
                 content: ""
-                background-image: url("../img/CallMe.svg")
+                background-image: url("..img/CallMe.png")
                 width: 30px
                 height: 30px
                 display: block
@@ -116,8 +115,9 @@ body
         color: $white
         letter-spacing: -2px
         margin-bottom: 150px
+        background-image: url("../src/img/group3.jpg")
     &-wrap
-        background-image: url("../img/why-bg2.png")
+        
         background-repeat: no-repeat
         border-radius: 100px
         padding: 80px 100px
@@ -126,6 +126,8 @@ body
     &-items
         display: flex
         justify-content: space-between
+    &-block
+        
     &-item
         width: 30%
         img
@@ -137,6 +139,7 @@ body
             line-height: 40px
             span
                 color: $grey
+        
 
 .scooters
     padding: 250px 0
@@ -245,6 +248,7 @@ body
         line-height: 100px
         letter-spacing: -2px
         color: $black
+        margin-top: 90px
     &-model
         color: rgba(0, 0, 0, 0.65)
         font-size: 22px
@@ -268,6 +272,7 @@ body
         justify-content: space-between
     &-image
         img
+
     &-text
         margin-left: 85px
         p
